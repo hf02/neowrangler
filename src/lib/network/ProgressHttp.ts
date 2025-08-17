@@ -1,5 +1,5 @@
 import https from "https";
-import { ByteProgressUnit, Progress } from "../Progress";
+import { ByteProgressUnit, Progress } from "../Progress.js";
 import FormData from "form-data";
 import { IncomingHttpHeaders } from "http";
 import ProgressStream from "progress-stream";

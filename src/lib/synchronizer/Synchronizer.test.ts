@@ -1,14 +1,14 @@
 import {
 	LocalFilesystem,
 	LocalFilesystemFile,
-} from "../filesystem/LocalFilesystem";
-import { MockNeocitiesApi } from "../neocities/MockNeocitiesApi";
-import { NeocitiesFilesystem } from "../neocities/NeocitiesFilesystem";
+} from "../filesystem/LocalFilesystem.js";
+import { MockNeocitiesApi } from "../neocities/MockNeocitiesApi.js";
+import { NeocitiesFilesystem } from "../neocities/NeocitiesFilesystem.js";
 import {
 	BulkNeocitiesDeleteSyncAction,
 	BulkNeocitiesUploadSyncAction,
-} from "./SyncAction";
-import { SyncActionPlan } from "./Synchronizer";
+} from "./SyncAction.js";
+import { SyncActionPlan } from "./Synchronizer.js";
 
 describe("SyncActionPlan", () => {
 	test("uploads", async () => {

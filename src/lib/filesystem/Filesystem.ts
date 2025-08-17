@@ -1,12 +1,8 @@
 import path from "node:path";
-import { freeFileTypes } from "../consts";
-import { Progress } from "../Progress";
-import { readFile } from "node:fs/promises";
-import crypto from "node:crypto";
-import { Stream } from "form-data";
-import { createReadStream, read, ReadStream } from "node:fs";
+import { freeFileTypes } from "../consts.js";
+import { Progress } from "../Progress.js";
 import { Readable } from "node:stream";
-import { FileIgnoreFilter } from "../ignore/FileIgnoreFilter";
+import { FileIgnoreFilter } from "../ignore/FileIgnoreFilter.js";
 
 export abstract class Filesystem<T extends FilesystemFile> {
 	files: T[] = [];

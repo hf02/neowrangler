@@ -1,5 +1,5 @@
-import { Progress } from "../Progress";
-import { Filesystem, FilesystemFile } from "./Filesystem";
+import { Progress } from "../Progress.js";
+import { Filesystem, FilesystemFile } from "./Filesystem.js";
 
 class TestFilesystemFile extends FilesystemFile {
 	override readAsBuffer(): Progress<Buffer<ArrayBufferLike | ArrayBuffer>> {

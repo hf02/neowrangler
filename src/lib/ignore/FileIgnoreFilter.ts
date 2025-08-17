@@ -1,7 +1,6 @@
 import gitIgnoreParser from "gitignore-parser";
-import { FilesystemFile } from "../filesystem/Filesystem";
+import { FilesystemFile } from "../filesystem/Filesystem.js";
 import fs from "node:fs/promises";
-import { doesErrorMatchNodeCode } from "../node/error";
 
 export class FileIgnoreFilter {
 	doesIgnoreSupporterFiles = false;

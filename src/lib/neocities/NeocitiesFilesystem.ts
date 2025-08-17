@@ -4,9 +4,9 @@ import {
 	NeocitiesApiFile,
 	NeocitiesApiFileListEntry,
 	NeocitiesApiUploadEntry,
-} from "./NeocitiesApi";
-import { Progress } from "../Progress";
-import { Filesystem, FilesystemFile } from "../filesystem/Filesystem";
+} from "./NeocitiesApi.js";
+import { Progress } from "../Progress.js";
+import { Filesystem, FilesystemFile } from "../filesystem/Filesystem.js";
 
 export class NeocitiesFilesystem extends Filesystem<NeocitiesFilesystemFile> {
 	constructor(readonly api: NeocitiesApi) {

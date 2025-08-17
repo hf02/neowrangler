@@ -2,13 +2,13 @@ import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 
 import "dotenv/config";
-import { NeocitiesApi } from "./lib/neocities/NeocitiesApi";
-import { FilesystemFactory } from "./lib/filesystem/FilesystemFactory";
-import { NeocitiesFilesystem } from "./lib/neocities/NeocitiesFilesystem";
-import { SyncActionPlan } from "./lib/synchronizer/Synchronizer";
-import { FileIgnoreFilter } from "./lib/ignore/FileIgnoreFilter";
-import { Progress } from "./lib/Progress";
-import { ProgressDisplay } from "./lib/progress/ProgressDisplay";
+import { NeocitiesApi } from "./lib/neocities/NeocitiesApi.js";
+import { FilesystemFactory } from "./lib/filesystem/FilesystemFactory.js";
+import { NeocitiesFilesystem } from "./lib/neocities/NeocitiesFilesystem.js";
+import { SyncActionPlan } from "./lib/synchronizer/Synchronizer.js";
+import { FileIgnoreFilter } from "./lib/ignore/FileIgnoreFilter.js";
+import { Progress } from "./lib/Progress.js";
+import { ProgressDisplay } from "./lib/progress/ProgressDisplay.js";
 
 yargs()
 	.scriptName("neowrangler")

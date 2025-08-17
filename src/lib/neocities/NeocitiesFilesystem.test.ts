@@ -1,11 +1,9 @@
-import { createReadStream, rmSync } from "node:fs";
-import { NeocitiesApi } from "./NeocitiesApi";
-import { LocalFilesystem } from "../filesystem/LocalFilesystem";
-import { FilesystemFactory } from "../filesystem/FilesystemFactory";
-import { NeocitiesFilesystem } from "./NeocitiesFilesystem";
+import { NeocitiesApi } from "./NeocitiesApi.js";
+import { FilesystemFactory } from "../filesystem/FilesystemFactory.js";
+import { NeocitiesFilesystem } from "./NeocitiesFilesystem.js";
 
 import "dotenv/config";
-import { neowranglerTestApiKey } from "../consts";
+import { neowranglerTestApiKey } from "../consts.js";
 
 describe("NeocitiesFilesystem", () => {
 	test("dummy", () => {});

@@ -1,16 +1,18 @@
-import { Progress } from "../Progress";
+import { Progress } from "../Progress.js";
 import {
 	NeocitiesApi,
 	NeocitiesApiFile,
 	NeocitiesApiFileListEntry,
-	NeocitiesApiInfoEndpoint,
 	NeocitiesApiInfoEndpointInfo,
 	NeocitiesApiResultType,
 	NeocitiesApiSiteInfo,
 	NeocitiesApiSuccessResult,
 	NeocitiesApiUploadEndpoint,
-} from "./NeocitiesApi";
-import { NeocitiesApiError, NeocitiesApiErrorType } from "./NeocitiesApiError";
+} from "./NeocitiesApi.js";
+import {
+	NeocitiesApiError,
+	NeocitiesApiErrorType,
+} from "./NeocitiesApiError.js";
 
 const files = [
 	{

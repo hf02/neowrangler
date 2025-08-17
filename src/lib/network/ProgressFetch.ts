@@ -1,4 +1,4 @@
-import { ByteProgressUnit, Progress } from "../Progress";
+import { ByteProgressUnit, Progress } from "../Progress.js";
 
 export function getLengthOfBodyInit(
 	init?: BodyInit | FormDataEntryValue,

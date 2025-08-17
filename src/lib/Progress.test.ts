@@ -1,4 +1,4 @@
-import { Progress } from "./Progress";
+import { Progress } from "./Progress.js";
 
 describe("Progress", () => {
 	const createContext = () => {

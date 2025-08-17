@@ -1,14 +1,9 @@
-import { doesErrorMatchNodeCode } from "../node/error";
-import { FilesystemFactory } from "./FilesystemFactory";
-import {
-	LocalFilesystem,
-	LocalFilesystemFile,
-	LocalFilesystemReadOnlyError,
-} from "./LocalFilesystem";
+import { doesErrorMatchNodeCode } from "../node/error.js";
+import { FilesystemFactory } from "./FilesystemFactory.js";
 import {
 	WritableLocalFilesystem,
 	WritableLocalFilesystemFile,
-} from "./WritableLocalFilesystem";
+} from "./WritableLocalFilesystem.js";
 
 const createFilesystem = () =>
 	FilesystemFactory.createWritableLocalFilesystemFromDirectory("./test");

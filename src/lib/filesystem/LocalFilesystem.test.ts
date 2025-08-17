@@ -1,9 +1,9 @@
-import { FilesystemFactory } from "./FilesystemFactory";
+import { FilesystemFactory } from "./FilesystemFactory.js";
 import {
 	LocalFilesystem,
 	LocalFilesystemFile,
 	LocalFilesystemReadOnlyError,
-} from "./LocalFilesystem";
+} from "./LocalFilesystem.js";
 
 const createFilesystem = () =>
 	FilesystemFactory.createLocalFilesystemFromDirectory("./test");

@@ -1,11 +1,11 @@
-import { Filesystem, FilesystemFile } from "../filesystem/Filesystem";
+import { Filesystem, FilesystemFile } from "../filesystem/Filesystem.js";
 import {
 	CommittedNeocitiesFilesystemFile,
 	NeocitiesFilesystem,
 	NeocitiesFilesystemFile,
 	PartialNeocitiesFilesystemFile,
-} from "../neocities/NeocitiesFilesystem";
-import { Progress } from "../Progress";
+} from "../neocities/NeocitiesFilesystem.js";
+import { Progress } from "../Progress.js";
 import {
 	BulkNeocitiesDeleteSyncAction,
 	BulkNeocitiesUploadSyncAction,
@@ -14,7 +14,7 @@ import {
 	DeleteSyncAction,
 	SyncAction,
 	SyncActionTag,
-} from "./SyncAction";
+} from "./SyncAction.js";
 
 export class SyncActionPlan {
 	actions: SyncAction[] = [];

@@ -1,5 +1,5 @@
-import { Debounce } from "../debounce";
-import { Progress } from "../Progress";
+import { Debounce } from "../debounce.js";
+import { Progress } from "../Progress.js";
 
 export class ProgressDisplay {
 	constructor(readonly progress: Progress<unknown>) {}

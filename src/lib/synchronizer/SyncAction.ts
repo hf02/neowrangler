@@ -1,10 +1,9 @@
-import { Filesystem, FilesystemFile } from "../filesystem/Filesystem";
+import { Filesystem, FilesystemFile } from "../filesystem/Filesystem.js";
 import {
 	NeocitiesFilesystem,
 	NeocitiesFilesystemFile,
-	PartialNeocitiesFilesystemFile,
-} from "../neocities/NeocitiesFilesystem";
-import { Progress } from "../Progress";
+} from "../neocities/NeocitiesFilesystem.js";
+import { Progress } from "../Progress.js";
 
 /**
  * determines the order

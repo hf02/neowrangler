@@ -1,7 +1,5 @@
-import { FilesystemFactory } from "../filesystem/FilesystemFactory";
-import { LocalFilesystem } from "../filesystem/LocalFilesystem";
-import { progressFetch, progressFetchJson } from "./ProgressFetch";
-import { progressHttp, progressHttpJson } from "./ProgressHttp";
+import { FilesystemFactory } from "../filesystem/FilesystemFactory.js";
+import { progressHttp, progressHttpJson } from "./ProgressHttp.js";
 
 describe("ProgressHttp", () => {
 	test("dummy", () => {});

@@ -1,9 +1,9 @@
-import type { Progress } from "../Progress";
-import { LocalFilesystem, LocalFilesystemFile } from "./LocalFilesystem";
+import type { Progress } from "../Progress.js";
+import { LocalFilesystem, LocalFilesystemFile } from "./LocalFilesystem.js";
 import {
 	WritableLocalFilesystem,
 	WritableLocalFilesystemFile,
-} from "./WritableLocalFilesystem";
+} from "./WritableLocalFilesystem.js";
 
 export class FilesystemFactory {
 	static createLocalFilesystemFromDirectory(

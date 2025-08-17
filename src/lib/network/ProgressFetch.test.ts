@@ -1,4 +1,4 @@
-import { progressFetch, progressFetchJson } from "./ProgressFetch";
+import { progressFetch, progressFetchJson } from "./ProgressFetch.js";
 
 describe("ProgressFetch", () => {
 	test("progressFetch fetches data: urls", async () => {

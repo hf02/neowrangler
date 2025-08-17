@@ -1,15 +1,12 @@
 import path from "node:path";
-import { freeFileTypes } from "../consts";
-import { Progress } from "../Progress";
+import { Progress } from "../Progress.js";
 import { createReadStream } from "node:fs";
 import fs from "node:fs/promises";
 import fsSync from "node:fs";
 import crypto from "node:crypto";
-import { Filesystem, FilesystemFile } from "./Filesystem";
-import { ReadStream } from "node:fs";
-import { doesErrorMatchNodeCode } from "../node/error";
+import { Filesystem, FilesystemFile } from "./Filesystem.js";
+import { doesErrorMatchNodeCode } from "../node/error.js";
 import Stream, { Readable } from "node:stream";
-import { Constructor } from "../types";
 
 export function traverseDirectory(
 	directory: string,

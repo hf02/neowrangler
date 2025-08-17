@@ -1,8 +1,10 @@
-import { ReadStream } from "node:fs";
-import { progressFetch, progressFetchJson } from "../network/ProgressFetch";
-import { Progress } from "../Progress";
-import { NeocitiesApiError, NeocitiesApiErrorType } from "./NeocitiesApiError";
-import { progressHttpJson } from "../network/ProgressHttp";
+import { progressFetch, progressFetchJson } from "../network/ProgressFetch.js";
+import { Progress } from "../Progress.js";
+import {
+	NeocitiesApiError,
+	NeocitiesApiErrorType,
+} from "./NeocitiesApiError.js";
+import { progressHttpJson } from "../network/ProgressHttp.js";
 import { RequestOptions } from "node:https";
 import FormData from "form-data";
 import { Readable } from "node:stream";

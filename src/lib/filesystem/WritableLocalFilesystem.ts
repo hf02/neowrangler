@@ -1,15 +1,7 @@
-import path from "node:path";
-import { freeFileTypes } from "../consts";
-import { Progress } from "../Progress";
-import { createReadStream } from "node:fs";
+import { Progress } from "../Progress.js";
 import fs from "node:fs/promises";
-import fsSync from "node:fs";
-import crypto from "node:crypto";
-import { Filesystem, FilesystemFile } from "./Filesystem";
-import { ReadStream } from "node:fs";
-import { doesErrorMatchNodeCode } from "../node/error";
-import Stream, { Readable } from "node:stream";
-import { LocalFilesystem, LocalFilesystemFile } from "./LocalFilesystem";
+import { Readable } from "node:stream";
+import { LocalFilesystem, LocalFilesystemFile } from "./LocalFilesystem.js";
 
 export class WritableLocalFilesystem<
 	T extends WritableLocalFilesystemFile = WritableLocalFilesystemFile,

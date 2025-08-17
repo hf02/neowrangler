@@ -1,5 +1,5 @@
-import { Debounce, debounce } from "./debounce";
-import { Emitter } from "./Emitter";
+import { Debounce, debounce } from "./debounce.js";
+import { Emitter } from "./Emitter.js";
 
 /**
  * a thenable with a name and the ability to indicate progress.

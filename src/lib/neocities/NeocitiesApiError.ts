@@ -1,5 +1,4 @@
-import { brandName } from "../consts";
-import { NeocitiesApiErrorResult } from "./NeocitiesApi";
+import { NeocitiesApiErrorResult } from "./NeocitiesApi.js";
 
 export enum NeocitiesApiErrorType {
 	ServerError = "server_error",
