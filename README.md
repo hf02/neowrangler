@@ -94,6 +94,18 @@ $ neowrangler push . --ignore-file=.ignore
 
 Everything specified in there will ignore all files that exist on Neocities and on your disk. So, if you have a `/test` folder that is ignored, it won't upload from that wolder. It also won't delete anything in there if you're using `--prune`. Internally, its as if those files didn't exist at all.
 
+#### Ignoring files not supported on a free account
+
+To ignore all files that you need a Supporter account for, you can use this line in your ignore file:
+
+```
+# @neowrangler supporter
+```
+
+This has the added benefit of not deleting any supporter-only files leftover you may already have when using `--prune`.
+
+#### Advanced
+
 You can also be more specific. Note this is playing with fire, and when using `--prune`, you may screw up your site. I may remove this feature later if there's not a good use-case for it.
 
 ```
