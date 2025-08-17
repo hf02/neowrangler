@@ -10,7 +10,7 @@ export class ProgressDisplay {
 
 	redraw() {
 		if (!this.running) return;
-		const totalPercent = this.progress.getTotalPercent();
+		const totalPercent = this.progress.getTotalPercent() * 100;
 		const percentString = totalPercent.toFixed(1) + "%";
 		console.log(
 			`(${percentString.padStart(6)}) ${this.progress.toString()}`,
