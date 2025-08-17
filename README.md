@@ -14,16 +14,10 @@ Neowrangler is currently still in development, but it's good enough to where I u
 
 ## Install
 
-In the future, you'll install it using NPM. But for now...
-
-1. Install Node.js if you haven't.
-2. Clone the repo somewhere.
-3. Run `npm i` and then `npm run build` in the repo.
-4. Copy the path of the index.js file in the root of the repo.
-5. Run it using that path. Very ugly!
+Install it using NPM. You can get NPM by [installing Node.js](https://nodejs.org/en/download).
 
 ```
-$ node ~/path/to/that/repo/index.js push .
+$ npm i --global neowrangler
 ```
 
 ## Usage
@@ -118,7 +112,6 @@ In no particular order:
 
 ### Feature-wise
 
--   Put up on npm.
 -   Running just `neowrangler` does nothing. It should at least show something.
 -   Better output. Currently it just vomits its current status and doesn't accurately show progress.
 -   Handle folders. It currently isn't aware of them, which comes with the side effect of `--prune` not deleting empty folders.
