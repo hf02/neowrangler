@@ -32,9 +32,9 @@ Oddity to make note of. Just running `neomanager` does nothing. That's a bug. Tr
 
 ### Logging in
 
-Get you API key. [In Neocities's settings page](https://neocities.org/settings), click "Manage Site Settings" for the site you want to use. Then, go to the API tab. Generate it if you need to.
+Get your API key. [In Neocities's settings page](https://neocities.org/settings), click "Manage Site Settings" for the site you want to use. Then, go to the API tab. Generate it if you need to.
 
-Neowrangler doesn't have a login command, it instead gets your API key from your environment variables, or a .env file. By default, it's looking for `NEOCITIES_API_KEY`.
+Neowrangler doesn't have a login command: it instead gets your API key from your environment variables or a .env file. By default, it's looking for `NEOCITIES_API_KEY`.
 
 Not sure what that means? You want to make a `.env` file wherever you'll be using Neowrangler. In that file, put your API key there like so:
 
