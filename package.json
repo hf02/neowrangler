@@ -1,7 +1,9 @@
 {
 	"name": "neowrangler",
-	"version": "1.0.0",
+	"description": "a fast uploader for neocities",
+	"version": "0.0.1",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"test": "jest",
 		"test:watch": "nodemon -w src/**/* -e * --exec npm run test",
@@ -9,9 +11,16 @@
 		"dev": "tsc --watch",
 		"start": "node dist/index.js"
 	},
-	"author": "",
-	"license": "ISC",
-	"description": "",
+	"author": "dabric.xyz",
+	"license": "MIT",
+	"bin": {
+		"neomanager": "./index.js"
+	},
+	"files": [
+		"/index.js",
+		"/README.md",
+		"/build"
+	],
 	"devDependencies": {
 		"@types/gitignore-parser": "^0.0.3",
 		"@types/jest": "^30.0.0",
