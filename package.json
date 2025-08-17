@@ -19,7 +19,7 @@
 	"files": [
 		"/index.js",
 		"/README.md",
-		"/build"
+		"/dist"
 	],
 	"devDependencies": {
 		"@types/gitignore-parser": "^0.0.3",
