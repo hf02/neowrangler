@@ -1,0 +1,31 @@
+{
+	"name": "neowrangler",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"test:watch": "nodemon -w src/**/* -e * --exec npm run test",
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"start": "node dist/index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/gitignore-parser": "^0.0.3",
+		"@types/jest": "^30.0.0",
+		"@types/progress-stream": "^2.0.5",
+		"jest": "^30.0.5",
+		"nodemon": "^3.1.10",
+		"ts-jest": "^29.4.1",
+		"ts-node": "^10.9.2"
+	},
+	"dependencies": {
+		"dotenv": "^17.2.1",
+		"form-data": "^4.0.4",
+		"gitignore-parser": "^0.0.2",
+		"progress-stream": "^2.0.0",
+		"yargs": "^17.7.2"
+	}
+}
