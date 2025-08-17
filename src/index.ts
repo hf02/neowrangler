@@ -29,17 +29,17 @@ yargs()
 						"delete files on neocities that aren't in the given directory.",
 					default: false,
 				})
-				.positional("gitignore", {
+				.positional("ignore-file", {
 					type: "string",
 					describe:
 						"a gitignore file that specifics which files to ignore. to neowrangler, it's like they don't exist on your computer or on neocities.\n(alias for both --local-gitignore and --remote-gitignore)",
 				})
-				.positional("local-gitignore", {
+				.positional("local-ignore-file", {
 					type: "string",
 					describe:
 						"a gitignore file that specifies which files to ignore on your computer and not upload.",
 				})
-				.positional("remote-gitignore", {
+				.positional("remote-ignore-file", {
 					type: "string",
 					describe:
 						"a gitignore file that specifics which files to ignore on neocities and not delete when pruning. will still overwrite files.",
@@ -56,8 +56,8 @@ yargs()
 						"just print changes that would be done to the neocities website, without actually committing any of those changes.",
 					default: false,
 				})
-				.conflicts("gitignore", "local-gitignore")
-				.conflicts("gitignore", "remote-gitignore");
+				.conflicts("ignore-file", "local-ignore-file")
+				.conflicts("ignore-file", "remote-ignore-file");
 		},
 		async function (argv) {
 			const key = process.env[argv.neocitiesKeyEnv as string];
@@ -88,10 +88,10 @@ yargs()
 					const neocitiesFiles = new NeocitiesFilesystem(api);
 					await progress.defer(neocitiesFiles.loadFromNeocities());
 
-					const localIgnorePath = (argv.gitignore ??
-						argv.localGitignore) as string | undefined;
-					const remoteIgnorePath = (argv.gitignore ??
-						argv.remoteGitignore) as string | undefined;
+					const localIgnorePath = (argv.ignoreFile ??
+						argv.localIgnoreFile) as string | undefined;
+					const remoteIgnorePath = (argv.ignoreFile ??
+						argv.remoteIgnoreFile) as string | undefined;
 
 					const localIgnore =
 						await FileIgnoreFilter.readFromPossiblePath(
