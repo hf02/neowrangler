@@ -22,7 +22,7 @@ $ npm i --global neowrangler
 
 ## Usage
 
-Oddity to make note of. Just running `neomanager` does nothing. That's a bug. Try running `neomanager --help` instead.
+Oddity to make note of. Just running `neowrangler` does nothing. That's a bug. Try running `neowrangler --help` instead.
 
 ### Logging in
 
