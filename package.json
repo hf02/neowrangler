@@ -14,7 +14,7 @@
 	"author": "dabric.xyz",
 	"license": "MIT",
 	"bin": {
-		"neowrangler": "./index.js"
+		"neowrangler": "index.js"
 	},
 	"files": [
 		"/index.js",
